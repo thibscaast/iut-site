@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences | Thibaut Castelain</title>
+  <link href="assets/css/competence.css" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-bg-animation" aria-hidden="true">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-bg-orb"></div>
+  </div>
+
+  <header class="topbar container-shell">
+    <a class="back-link" href="index.html#services">Retour au portfolio</a>
+    <h1>Compétences</h1>
+    <p>Choisis une compétence pour afficher son détail et les apprentissages critiques.</p>
+  </header>
+
+  <main class="container-shell competence-layout">
+    <nav class="skills-nav" aria-label="Compétences">
+      <button class="skill-tab is-active" id="administrer" type="button" data-skill="administrer" aria-selected="true" role="tab" aria-controls="panel-administrer">
+        <span class="tab-title">Administrer</span>
+        <span class="tab-subtitle">Réseaux &amp; Internet</span>
+      </button>
+      <button class="skill-tab" id="connecter" type="button" data-skill="connecter" aria-selected="false" role="tab" aria-controls="panel-connecter">
+        <span class="tab-title">Connecter</span>
+        <span class="tab-subtitle">Entreprises &amp; usagers</span>
+      </button>
+      <button class="skill-tab" id="creer" type="button" data-skill="creer" aria-selected="false" role="tab" aria-controls="panel-creer">
+        <span class="tab-title">Créer</span>
+        <span class="tab-subtitle">Outils &amp; applications</span>
+      </button>
+    </nav>
+
+    <section class="skill-stage" aria-live="polite">
+      <article class="skill-panel is-active" id="panel-administrer" data-skill="administrer" role="tabpanel" aria-labelledby="administrer">
+        <div class="panel-head">
+          <span class="panel-tag">Compétence cible</span>
+          <h2>Administrer les réseaux et l'Internet</h2>
+          <p>Configurer, maintenir et sécuriser des infrastructures en assurant la continuité de service.</p>
+        </div>
+
+        <div class="panel-grid">
+          <section class="glass-card ac-scroll">
+            <h3>Apprentissages critiques</h3>
+            <p class="muted">Ces apprentissages s'affichent lorsque tu sélectionnes <strong>Administrer</strong>.</p>
+            <ul class="ac-list">
+              <li class="ac-item" data-resources="Cours Elec 01|TP cablage switch|Quiz securite electrique"><span>AC11.01</span> Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications.</li>
+              <li class="ac-item" data-resources="Schema architecture numerique|Rappel codage binaire|Fiche Internet fundamentals"><span>AC11.02</span> Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet.</li>
+              <li class="ac-item" data-resources="Lab VLAN de base|Atelier DHCP local|Mini projet LAN"><span>AC11.03</span> Configurer les fonctions de base du réseau local.</li>
+              <li class="ac-item" data-resources="TP Linux reseau|Guide systemes d'exploitation|Exercice services reseau"><span>AC11.04</span> Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis.</li>
+              <li class="ac-item" data-resources="Check-list diagnostic LAN|Scenario incident campus|Template rapport anomalie"><span>AC11.05</span> Identifier les dysfonctionnements du réseau local et savoir les signaler.</li>
+              <li class="ac-item" data-resources="Procedure installation poste|Image systeme de reference|Video configuration client"><span>AC11.06</span> Installer un poste client, expliquer la procédure mise en place.</li>
+            </ul>
+          </section>
+
+          <aside class="side-stack">
+            <section class="glass-card compact-card side-toggle-menu" data-show="progress">
+              <button class="side-toggle-btn" type="button" aria-expanded="false">Afficher les ressources</button>
+
+              <div class="side-views">
+                <div class="side-view view-progress is-visible">
+                  <h3>Progression</h3>
+                  <div class="levels-track" aria-label="Niveaux Administrer">
+                    <div class="level-step is-complete">
+                      <strong>Niveau 1</strong>
+                      <span>Fondamentaux validés</span>
+                    </div>
+                    <div class="level-step is-current">
+                      <strong>Niveau 2</strong>
+                      <span>Validation en cours</span>
+                    </div>
+                    <div class="level-step">
+                      <strong>Niveau 3</strong>
+                      <span>Expertise cible</span>
+                    </div>
+                  </div>
+                  <p class="muted">Mises en situation d'administration réseau et de diagnostic terrain en progression continue.</p>
+                </div>
+
+                <div class="side-view view-resources">
+                  <h3>Ressources liées</h3>
+                  <p class="muted">Clique sur un apprentissage critique pour voir ses ressources.</p>
+                  <ul class="resource-list"></ul>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </article>
+
+      <article class="skill-panel" id="panel-connecter" data-skill="connecter" role="tabpanel" aria-labelledby="connecter" hidden>
+        <div class="panel-head">
+          <span class="panel-tag">Compétence cible</span>
+          <h2>Connecter les entreprises et les usagers</h2>
+          <p>Concevoir des liens fiables entre sites, utilisateurs et services avec une approche sécurité/performance.</p>
+        </div>
+        <div class="panel-grid">
+          <section class="glass-card ac-scroll">
+            <h3>Apprentissages critiques</h3>
+            <ul class="ac-list">
+              <li class="ac-item" data-resources="TP oscilloscope|Fiche analyse spectrale|Exercice commentaire signal"><span>AC12.01</span> Mesurer, analyser et commenter les signaux.</li>
+              <li class="ac-item" data-resources="Modele transmission simplifie|Cours modulation intro|Simulation canal de base"><span>AC12.02</span> Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement.</li>
+              <li class="ac-item" data-resources="Guide fibre cuivre|Atelier sertissage|Checklist deploiement support"><span>AC12.03</span> Déployer des supports de transmission.</li>
+              <li class="ac-item" data-resources="Lab ToIP de base|Fiche SIP|Config poste IP exemple"><span>AC12.04</span> Connecter les systèmes de ToIP.</li>
+              <li class="ac-item" data-resources="Jeu de role client|Template mail pro|Fiche adaptation discours"><span>AC12.05</span> Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur.</li>
+            </ul>
+          </section>
+          <aside class="side-stack">
+            <section class="glass-card compact-card side-toggle-menu" data-show="progress">
+              <button class="side-toggle-btn" type="button" aria-expanded="false">Afficher les ressources</button>
+
+              <div class="side-views">
+                <div class="side-view view-progress is-visible">
+                  <h3>Progression</h3>
+                  <div class="levels-track" aria-label="Niveaux Connecter">
+                    <div class="level-step is-complete">
+                      <strong>Niveau 1</strong>
+                      <span>Fondamentaux validés</span>
+                    </div>
+                    <div class="level-step is-current">
+                      <strong>Niveau 2</strong>
+                      <span>Validation en cours</span>
+                    </div>
+                    <div class="level-step">
+                      <strong>Niveau 3</strong>
+                      <span>Expertise cible</span>
+                    </div>
+                  </div>
+                  <p class="muted">Niveau 2 en progression sur la transmission, la ToIP et la communication professionnelle.</p>
+                </div>
+
+                <div class="side-view view-resources">
+                  <h3>Ressources liées</h3>
+                  <p class="muted">Clique sur un apprentissage critique pour voir ses ressources.</p>
+                  <ul class="resource-list"></ul>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </article>
+
+      <article class="skill-panel" id="panel-creer" data-skill="creer" role="tabpanel" aria-labelledby="creer" hidden>
+        <div class="panel-head">
+          <span class="panel-tag">Compétence cible</span>
+          <h2>Créer des outils et applications</h2>
+          <p>Développer des solutions utiles, maintenables et orientées besoins métiers.</p>
+        </div>
+        <div class="panel-grid">
+          <section class="glass-card ac-scroll">
+            <h3>Apprentissages critiques</h3>
+            <ul class="ac-list">
+              <li class="ac-item" data-resources="Guide shell de base|Memo outils IDE|Checklist environnement poste"><span>AC13.01</span> Utiliser un système informatique et ses outils.</li>
+              <li class="ac-item" data-resources="Atelier debug JS|Exercices correction code|Revision lecture programme"><span>AC13.02</span> Lire, exécuter, corriger et modifier un programme.</li>
+              <li class="ac-item" data-resources="Fiche algo vers code|Exemple pseudo-code|Mini challenge traduction"><span>AC13.03</span> Traduire un algorithme, dans un langage et pour un environnement donné.</li>
+              <li class="ac-item" data-resources="Cours architecture web|Schema HTTP complet|Lab front/back integration"><span>AC13.04</span> Connaître l'architecture et les technologies d'un site Web.</li>
+              <li class="ac-item" data-resources="Comparatif SQL NoSQL|TP modelisation donnees|Argumentaire choix stockage"><span>AC13.05</span> Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix.</li>
+              <li class="ac-item" data-resources="Guide Git flow|Rituel sprint equipe|Bonnes pratiques revue de code"><span>AC13.06</span> S'intégrer dans un environnement propice au développement et au travail collaboratif.</li>
+            </ul>
+          </section>
+          <aside class="side-stack">
+            <section class="glass-card compact-card side-toggle-menu" data-show="progress">
+              <button class="side-toggle-btn" type="button" aria-expanded="false">Afficher les ressources</button>
+
+              <div class="side-views">
+                <div class="side-view view-progress is-visible">
+                  <h3>Progression</h3>
+                  <div class="levels-track" aria-label="Niveaux Créer">
+                    <div class="level-step is-complete">
+                      <strong>Niveau 1</strong>
+                      <span>Base fonctionnelle</span>
+                    </div>
+                    <div class="level-step is-current">
+                      <strong>Niveau 2</strong>
+                      <span>Validation en cours</span>
+                    </div>
+                    <div class="level-step">
+                      <strong>Niveau 3</strong>
+                      <span>Expertise cible</span>
+                    </div>
+                  </div>
+                  <p class="muted">Niveau 2 en cours sur les fondations dev, web et collaboration d'équipe.</p>
+                </div>
+
+                <div class="side-view view-resources">
+                  <h3>Ressources liées</h3>
+                  <p class="muted">Clique sur un apprentissage critique pour voir ses ressources.</p>
+                  <ul class="resource-list"></ul>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/js/competence.js"></script>
+</body>
+</html>

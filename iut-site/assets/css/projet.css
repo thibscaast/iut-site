@@ -1,0 +1,61 @@
+:root {
+  --bg: #0b1016;
+  --card: #121924;
+  --line: rgba(52, 152, 219, 0.32);
+  --text: #eaf1f8;
+  --muted: #adc0d4;
+  --accent: #2ea6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 85% 0%, rgba(46, 166, 255, 0.2), transparent 42%), var(--bg);
+}
+
+.topbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 20px 0;
+}
+
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 16px 0 0;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 22px 20px 40px;
+  display: grid;
+  gap: 16px;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.project-card h2 {
+  margin: 0 0 10px;
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}

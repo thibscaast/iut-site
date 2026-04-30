@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    image: portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    mem_limit: 64m
+    memswap_limit: 64m
+    ports:
+      - "80"
+    environment:
+      - TZ=Europe/Paris
